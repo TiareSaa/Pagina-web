@@ -35,6 +35,7 @@ body{
     color: #fff;
 }
 
+
 .hero::before{
     content: "";
     position: absolute;
@@ -46,6 +47,21 @@ body{
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
     z-index: -1;
+}
+
+.contacto{
+    
+    background-image: linear-gradient(180deg, #452727ab 0%, #7b323260 10%);
+    
+    
+}
+
+.contacto__cto{
+    display: auto;
+    width: 100%;
+    height: 100%;
+
+ 
 }
 
 .nav{
@@ -106,10 +122,12 @@ body{
 
 .hero__title{
      font-size: 3rem;
+     text-align: center;
 }
 
 .hero__paragraph{
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .cta{
@@ -484,6 +502,7 @@ body{
     text-align: center;
 }
 
+
 @media (max-width:800px){
     .nav__menu{
         display: block;
@@ -660,4 +679,11 @@ body{
         margin-left: 0;
     }
 }
+
+.carousel__max{
+
+    margin-top: 0;
+    position: absolute;
+}
+
 
