@@ -12,6 +12,7 @@ body{
 
 .logo__img{
    height: 90px;
+   width: auto;
 }
 
 .container{

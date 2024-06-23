@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<header class="hero">
+    <nav class="nav container">
+        <div class="nav__logo">
+            <img class="img" src="./img/logo.png" alt="logo">
+        </div>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="index.html" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="tienda.html" class="nav__links">Tienda</a>
+            </li>
+            <li class="nav__items">
+                <a href="acercade.html" class="nav__links">Acerca de</a>
+            </li>
+            <li class="nav__items">
+                <a href="contacto.html" class="nav__links">Contacto</a>
+            </li>
+            <img src="img/close.svg" class="nav__close" alt="close">
+        </ul>
+        <div class="nav__menu">
+            <img src="img/menu.svg" class="nav__img" alt="menu">
+        </div>
+    </nav>
+    <section class="hero__container container">
+        <h1 class="hero__title">AutoLand es mucho mas que una automotora...</h1>
+        <p class="hero__paragraph">Es un destino donde los sueños automovilísticos se hacen realidad. Visítanos hoy y descubre por qué AutoLand es el lugar perfecto para comenzar tu próxima aventura en la carretera. Tú futuro sobre ruedas</p>
+        <a href="tienda.html" class="cta">Comienza Ahora</a>
+    </section>
+</header>
+    <!-- Contenido del carrito -->
+    <main class="container d-flex justify-content-center mt-5">
+        <h2>Carrito de Compras</h2>
+        <div class="row" id="cartItems">
+            <!-- Los vehículos comprados se mostrarán aquí -->
+        </div>
+        <div class="mt-4">
+            <br>
+            <button class="btn btn-success" id="purchase-btn">Comprar</button>
+            <br>
+            <button class="btn btn-danger" id="cancel-btn">Cancelar</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title"><img src="img/logo.png" class="logo__img" alt="logoautoland"><p></p></h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="index.html" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="tienda.html" class="nav__links">Tienda</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="acercade.html" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer__form" action="https://formspree.io/f/xrgnnbop" method="POST">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email: " class="footer__input" name="email">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer_copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="img/fecebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="img/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="img/instagram.svg" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy;</h3>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
